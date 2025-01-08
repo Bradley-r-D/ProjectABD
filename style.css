@@ -1,0 +1,90 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f8f9; /* Light teal background */
+	background-image: url(./src/IMAG0365-COLLAGE.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container {
+	max-width: 960px;
+	max-height: 70px;
+	margin: 0 5;
+	padding: 5px;
+}
+
+header {
+	background-color: #008080; /* Dark teal header */
+	opacity: 80%;
+	padding: 0px 0;
+	text-align: center;
+	color: white; /* White header text */
+}
+
+header nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+header nav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+header nav a {
+	color: white; /* White navigation links */
+	text-decoration: none;
+}
+
+section {
+	padding: 20px 0;
+}
+
+h2 {
+	color: #008080; /* Dark teal headings */
+}
+
+.rose {
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: white; /* White project background */
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 4px rgba(0, 128, 128, 0.2); /* Teal shadow for project boxes */
+}
+
+.rose img {
+	width: 100%;
+	height: auto;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+.quote {
+	display: none;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.hidden {
+	display: none;
+}
+
+footer {
+	background-color: #008080; /* Dark teal footer */
+	color: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	opacity: 80%;
+}

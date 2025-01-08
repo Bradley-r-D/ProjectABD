@@ -45,10 +45,12 @@ backgroundMusic.autoplay = true;
 muteButton.addEventListener("click", () => {
 	if (backgroundMusic.muted) {
 		backgroundMusic.muted = false;
-		muteIcon.src = "./src/mute.svg";
+		muteIcon.classList.remove("fa-volume-mute"); // Remove mute class
+		muteIcon.classList.add("fa-volume-up"); // Add unmute class
 	} else {
 		backgroundMusic.muted = true;
-		muteIcon.src = "./src/unmute.svg";
+		muteIcon.classList.remove("fa-volume-up"); // Remove unmute class
+		muteIcon.classList.add("fa-volume-mute"); // Add mute class
 	}
 });
 

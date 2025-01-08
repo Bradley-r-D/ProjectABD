@@ -5,6 +5,8 @@ const header = document.querySelector("header");
 const footer = document.querySelector("footer");
 const sections = document.querySelectorAll("section"); // Get all sections
 const initialQuote = quoteDiv.innerHTML; // store the initial content
+const backgroundMusic = document.getElementById("backgroundMusic");
+const muteButton = document.getElementById("muteButton");
 
 let quotes = [
 	"I love her cute mouth the most. It always wants to kiss me and give me love and it says the best things that make me feel so warm inside.",
@@ -26,11 +28,29 @@ let quotes = [
 	"I love how passionate she can get about something where she is all in with her elation and emotion.",
 	"I love how excited she gets for good food. Just seeing that smile, her eyes light up and roll up is the best.",
 	"I love her kind eyes. They just look so loving and pure. You can tell that her soul is truly special.",
+	"I love how she always says proudly that she is an indian when someone say she is mixed or she looks like some other race. It brings a smile to my face when I hear how she say it",
 ];
 
 let currentQuoteIndex = 0;
 let isBudShowing = true;
 let elementsHidden = false; // Track visibility state
+
+// Set the source of the audio
+backgroundMusic.src =
+	"./src/Forever and Ever and Always (The Softer Version).mp3"; // Replace with your music file path
+
+// Optional: Autoplay the music
+backgroundMusic.autoplay = true;
+
+muteButton.addEventListener("click", () => {
+	if (backgroundMusic.muted) {
+		backgroundMusic.muted = false;
+		muteButton.textContent = "Mute";
+	} else {
+		backgroundMusic.muted = true;
+		muteButton.textContent = "Unmute";
+	}
+});
 
 function handleClick() {
 	if (isBudShowing) {

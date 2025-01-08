@@ -37,7 +37,7 @@ let isBudShowing = true;
 let elementsHidden = false; // Track visibility state
 
 // Set the source of the audio
-backgroundMusic.src = "./src/our_song.mp3";
+backgroundMusic.src = "./our_song.mp3";
 
 // Optional: Autoplay the music
 backgroundMusic.autoplay = true;

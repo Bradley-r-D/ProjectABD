@@ -7,6 +7,7 @@ const sections = document.querySelectorAll("section"); // Get all sections
 const initialQuote = quoteDiv.innerHTML; // store the initial content
 const backgroundMusic = document.getElementById("backgroundMusic");
 const muteButton = document.getElementById("muteButton");
+const muteIcon = document.getElementById("muteIcon");
 
 let quotes = [
 	"I love her cute mouth the most. It always wants to kiss me and give me love and it says the best things that make me feel so warm inside.",
@@ -45,10 +46,10 @@ backgroundMusic.autoplay = true;
 muteButton.addEventListener("click", () => {
 	if (backgroundMusic.muted) {
 		backgroundMusic.muted = false;
-		muteButton.textContent = "Mute";
+		muteIcon.src = "./src/mute.svg";
 	} else {
 		backgroundMusic.muted = true;
-		muteButton.textContent = "Unmute";
+		muteIcon.src = "./src/unmute.svg";
 	}
 });
 

@@ -30,6 +30,7 @@ let quotes = [
 	"I love how excited she gets for good food. Just seeing that smile, her eyes light up and roll up is the best.",
 	"I love her kind eyes. They just look so loving and pure. You can tell that her soul is truly special.",
 	"I love how she always says proudly that she is an indian when someone say she is mixed or she looks like some other race. It brings a smile to my face when I hear how she say it",
+"I love when she calls me Ley, it gives me butterflies and immediately makes me smile",
 ];
 
 let currentQuoteIndex = 0;

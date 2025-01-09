@@ -36,12 +36,11 @@ let currentQuoteIndex = 0;
 let isBudShowing = true;
 let elementsHidden = false; // Track visibility state
 
-// Set the source of the audio
-backgroundMusic.src =
-	"https://github.com/Bradley-r-D/ProjectABD/raw/refs/heads/main/our_song.mp3";
+// // Set the source of the audio
+// backgroundMusic.src = "https://bradley-r-d.github.io/ProjectABD/our_song.mp3";
 
-// Optional: Autoplay the music
-backgroundMusic.autoplay = true;
+// // Optional: Autoplay the music
+// backgroundMusic.autoplay = true;
 
 muteButton.addEventListener("click", () => {
 	if (backgroundMusic.muted) {

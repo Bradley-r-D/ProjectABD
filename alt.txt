@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MP3 Test</title>
+	</head>
+	<body>
+		<audio loop autoplay>
+			<source src="./our_song.wav" type="audio/wav" />
+		</audio>
+	</body>
+</html>

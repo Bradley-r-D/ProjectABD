@@ -38,10 +38,15 @@ let elementsHidden = false; // Track visibility state
 
 // Set the source of the audio
 backgroundMusic.src = "/our_song.wav";
+backgroundMusic.type = "audio/wav";
 // "raw.githubusercontent.com/Bradley-r-d/ProjectABD/main/our_song.wav";
 
 // Optional: Autoplay the music
-backgroundMusic.autoplay = true;
+// backgroundMusic.autoplay = true;
+backgroundMusic.play().catch((error) => {
+	console.error("Autoplay prevented:", error); // Catch and handle errors
+	// Add any UI updates or other error handling you need here
+});
 
 muteButton.addEventListener("click", () => {
 	if (backgroundMusic.muted) {
